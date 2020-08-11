@@ -1,15 +1,16 @@
 ﻿namespace ArdalisRating
 {
-    public class UnknownPolicyRater : Rater
+    internal class UnknownPolicyRater : Rater
     {
-        public UnknownPolicyRater(IRatingUpdater ratingUpdater)
-            : base(ratingUpdater)
+
+        public UnknownPolicyRater(RatingEngine engine, ConsoleLogger logger)
+            : base(engine, logger)
         {
         }
 
         public override void Rate(Policy policy)
         {
-            Logger.Log("Unknown policy type");
+            _logger.Log("Unknown policy type");
         }
     }
 }

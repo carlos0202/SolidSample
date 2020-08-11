@@ -2,10 +2,10 @@
 
 namespace ArdalisRating
 {
+
     public class Policy
     {
-        public string Type { get; set; }
-
+        public PolicyType Type { get; set; }
         #region Life Insurance
         public string FullName { get; set; }
         public DateTime DateOfBirth { get; set; }

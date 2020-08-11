@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.IO;
+=======
+﻿using System.IO;
+>>>>>>> origin/ISP
 
 namespace ArdalisRating
 {
@@ -10,4 +14,8 @@ namespace ArdalisRating
             return File.ReadAllText("policy.json");
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/ISP
